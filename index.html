@@ -25,16 +25,33 @@
 		
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-		    /* 본문 영역의 우측 여백을 줄여 전체적인 가로 폭을 확보 */
-		    #main {
-		        max-width: 95%; /* 기존보다 더 넓게 확장 */
-		        padding-right: 2em; /* 우측의 과도한 여백 제거 */
-		    }
-		    /* 한글 단어가 중간에 끊기지 않도록 설정 */
-		    p, li, h3 {
-		        word-break: keep-all; 
-		        overflow-wrap: break-word;
-		    }
+		  /* 1. 사이드바(좌측) 너비 조정 */
+		  #header {
+		    width: 28%; /* 기존 약 35%에서 줄여 본문 공간 확보 */
+		  }
+		
+		  /* 2. 본문(우측) 위치 및 여백 조정 */
+		  #main {
+		    margin-left: 28%; /* 사이드바 너비와 동일하게 맞춤 */
+		    max-width: 100%;  /* 전체 폭 사용 */
+		    padding-right: 4em; /* 우측에 숨 쉴 공간(여백) 확보 */
+		    padding-left: 4em;  /* 좌측과 우측의 여백 균형 */
+		  }
+		
+		  /* 3. 한글 가독성 최적화 (가장 중요) */
+		  p, li, h3, h2 {
+		    /* 단어 단위로 줄바꿈하여 '리/서처'처럼 잘리는 현상 방지 */
+		    word-break: keep-all; 
+		    overflow-wrap: break-word;
+		    line-height: 1.7; /* 줄 간격을 넓혀 읽기 편하게 조절 */
+		    text-align: justify; /* 양쪽 정렬로 깔끔한 인상 부여 */
+		  }
+		
+		  /* 4. 모바일 화면 배려 (화면이 작아지면 다시 꽉 차게) */
+		  @media screen and (max-width: 1280px) {
+		    #header { width: 30%; }
+		    #main { margin-left: 30%; padding: 3em; }
+		  }
 		</style>
 	</head>
 	<body class="is-preload">
@@ -68,10 +85,10 @@
 						<h3>Hard Skills</h3>
 						<ul>
 							<li><strong>Research:</strong> U&A 조사, 컨조인트 분석, 정성/정량 리서치 설계</li>
-							<li><strong>Data Science:</strong> Python (Pandas, NumPy), SQL (SQLD 보유), BigQuery</li>
+							<li><strong>Data Science:</strong> Python (Pandas, NumPy), SQL</li>
 							<li><strong>Analytics:</strong> GA4, GTM, SPSS, R, 통계적 가설 검정</li>
 							<li><strong>AI & ML:</strong> PyTorch, Computer Vision, DL 모델링</li>
-							<li><strong>Visualization:</strong> Q-GIS 공간 데이터 시각화, Matplotlib</li>
+							<li><strong>Visualization:</strong> Q-GIS, Matplotlib</li>
 						</ul>
 					</div>
 					<div class="col-6 col-12-xsmall">
@@ -80,7 +97,7 @@
 							<li><strong>Project Management:</strong> 팀 리딩 및 프로젝트 총괄 경험</li>
 							<li><strong>Business Insight:</strong> S전자 등 주요 기업 대상 북미/유럽시장 소비자 분석</li>
 							<li><strong>Communication:</strong> 고객사 대면 리포팅 및 전략 제언</li>
-							<li><strong>Awards:</strong> 한국경제신문사장상 우수상, 한국재정정보원장상 우수상, 고려대 학장상</li>
+							<li><strong>Awards:</strong> 한국경제신문 사장상 우수상, 한국재정정보원 원장상 우수상, 고려대학교 지능정보SW 아카데미 학장상</li>
 							<li><strong>Language:</strong> 영어 OPIc IH</li>
 						</ul>
 					</div>
@@ -101,7 +118,7 @@
 							<li>팀 리딩 및 프로젝트 총괄</li>
 							<li>스윙 자세 분류 정확도 <strong>92% 달성</strong></li>
 							<li>딥러닝 모델 설계 및 학습 파이프라인 구축</li>
-							<li><em>한국경제신문사 우수상 · 고려대 지능정보 SW아카데미 학장상 수상</em></li>
+							<li><em>한국경제신문 사장상 우수상 · 고려대 지능정보 SW아카데미 학장상(장려상) 수상</em></li>
 						</ul>
 					</article>
 					
@@ -190,4 +207,5 @@
 
 	</body>
 </html>
+
 
