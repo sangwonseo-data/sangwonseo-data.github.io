@@ -25,32 +25,62 @@
 		
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-		  /* 1. 사이드바(좌측) 너비 조정 */
+		  /* [1] 웹 버전: 데스크탑 표준 (기본 설정) */
 		  #header {
-		    width: 28%; /* 기존 약 35%에서 줄여 본문 공간 확보 */
+		    width: 28%;
+		    position: fixed; /* 사이드바 고정 */
 		  }
 		
-		  /* 2. 본문(우측) 위치 및 여백 조정 */
 		  #main {
-		    margin-left: 28%; /* 사이드바 너비와 동일하게 맞춤 */
-		    max-width: 100%;  /* 전체 폭 사용 */
-		    padding-right: 4em; /* 우측에 숨 쉴 공간(여백) 확보 */
-		    padding-left: 4em;  /* 좌측과 우측의 여백 균형 */
+		    margin-left: 28%;
+		    max-width: 100%;
+		    padding: 4em;
+		    word-break: keep-all; /* 단어 단위 줄바꿈 */
 		  }
 		
-		  /* 3. 한글 가독성 최적화 (가장 중요) */
+		  /* 한글 가독성 및 정렬 최적화 */
 		  p, li, h3, h2 {
-		    /* 단어 단위로 줄바꿈하여 '리/서처'처럼 잘리는 현상 방지 */
-		    word-break: keep-all; 
 		    overflow-wrap: break-word;
-		    line-height: 1.7; /* 줄 간격을 넓혀 읽기 편하게 조절 */
-		    text-align: justify; /* 양쪽 정렬로 깔끔한 인상 부여 */
+		    line-height: 1.7;
+		    text-align: justify; /* 양쪽 정렬 */
 		  }
 		
-		  /* 4. 모바일 화면 배려 (화면이 작아지면 다시 꽉 차게) */
+		  /* [2] 태블릿 버전: 아이패드 등 (1280px 이하) */
 		  @media screen and (max-width: 1280px) {
-		    #header { width: 30%; }
-		    #main { margin-left: 30%; padding: 3em; }
+		    #header {
+		      width: 35%; /* 사이드바 폭을 조금 더 확보 */
+		    }
+		    #main {
+		      margin-left: 35%;
+		      padding: 3em;
+		    }
+		  }
+		
+		  /* [3] 모바일 버전: 스마트폰 (736px 이하) */
+		  @media screen and (max-width: 736px) {
+		    #header {
+		      width: 100%;      /* 사이드바를 전체 폭으로 */
+		      position: relative; /* 고정 해제하여 위로 배치 */
+		      height: auto;
+		      padding: 3em 1.5em;
+		      text-align: center; /* 프로필 정보 중앙 정렬 */
+		    }
+		
+		    #main {
+		      margin-left: 0;    /* 왼쪽 여백 제거 */
+		      width: 100%;       /* 본문 100% 사용 */
+		      padding: 2em 1.2em; /* 좁은 화면에 맞춘 여백 */
+		    }
+		
+		    /* 모바일 가독성을 위해 왼쪽 정렬로 변경 */
+		    p, li {
+		      text-align: left;
+		    }
+		    
+		    /* 스킬 섹션(col-6)을 모바일에서는 한 줄에 하나씩 보이게 강제 */
+		    .col-6 {
+		      width: 100% !important;
+		    }
 		  }
 		</style>
 	</head>
@@ -207,5 +237,6 @@
 
 	</body>
 </html>
+
 
 
