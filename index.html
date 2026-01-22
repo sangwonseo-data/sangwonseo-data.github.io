@@ -1,242 +1,341 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ko">
-	<head>
-		<title>서상원 포트폴리오 | Sangwon Seo - Market Researcher & Data Analyst</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		
-		<!-- SEO Meta Tags -->
-		<meta name="description" content="서상원 | Ipsos 리서처 출신 데이터 분석가. Python, SQL, GA4/GTM 기반 마케팅 리서치 및 데이터 분석 포트폴리오">
-		<meta name="keywords" content="마케팅 리서처, 데이터 분석가, Ipsos, Python, SQL, GA4, 포트폴리오, 서상원">
-		<meta name="author" content="서상원 Sangwon Seo">
-		
-		<!-- Open Graph (LinkedIn, 카카오톡 공유 시 미리보기) -->
-		<meta property="og:title" content="서상원 포트폴리오 | Market Researcher & Data Analyst">
-		<meta property="og:description" content="Ipsos 리서처 경력 | Python/SQL 데이터 분석 | AI/ML 프로젝트 PM">
-		<meta property="og:image" content="https://sangwonseo-data.github.io/images/avatar.jpg">
-		<meta property="og:url" content="https://sangwonseo-data.github.io">
-		<meta property="og:type" content="website">
-		
-		<!-- Twitter Card -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="서상원 포트폴리오 | Market Researcher & Data Analyst">
-		<meta name="twitter:description" content="데이터 기반 인사이트 도출 전문가">
-		<meta name="twitter:image" content="https://sangwonseo-data.github.io/images/avatar.jpg">
-		
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-		  /* [1] 웹 버전: 데스크탑 표준 (기본 설정) */
-		  #header {
-		    width: 28%;
-		    position: fixed; /* 사이드바 고정 */
-		  }
-		
-		  #main {
-		    margin-left: 28%;
-		    max-width: 100%;
-		    padding: 4em;
-		    word-break: keep-all; /* 단어 단위 줄바꿈 */
-		  }
-		
-		  /* 한글 가독성 및 정렬 최적화 */
-		  p, li, h3, h2 {
-		    overflow-wrap: break-word;
-		    line-height: 1.7;
-		    text-align: justify; /* 양쪽 정렬 */
-		  }
-		
-		  /* [2] 태블릿 버전: 아이패드 등 (1280px 이하) */
-		  @media screen and (max-width: 1280px) {
-		    #header {
-		      width: 35%; /* 사이드바 폭을 조금 더 확보 */
-		    }
-		    #main {
-		      margin-left: 35%;
-		      padding: 3em;
-		    }
-		  }
-		
-		  /* [3] 모바일 버전: 스마트폰 (736px 이하) */
-		  @media screen and (max-width: 736px) {
-		    #header {
-		      width: 100%;      /* 사이드바를 전체 폭으로 */
-		      position: relative; /* 고정 해제하여 위로 배치 */
-		      height: auto;
-		      padding: 3em 1.5em;
-		      text-align: center; /* 프로필 정보 중앙 정렬 */
-		    }
-		
-		    #main {
-		      margin-left: 0;    /* 왼쪽 여백 제거 */
-		      width: 100%;       /* 본문 100% 사용 */
-		      padding: 2em 1.2em; /* 좁은 화면에 맞춘 여백 */
-		    }
-		
-		    /* 모바일 가독성을 위해 왼쪽 정렬로 변경 */
-		    p, li {
-		      text-align: left;
-		    }
-		    
-		    /* 스킬 섹션(col-6)을 모바일에서는 한 줄에 하나씩 보이게 강제 */
-		    .col-6 {
-		      width: 100% !important;
-		    }
-		  }
-		</style>
-	</head>
-	<body class="is-preload">
+  <head>
+    <title>
+      서상원 포트폴리오 | Sangwon Seo - Market Researcher & Data Analyst
+    </title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
 
-		<!-- Header -->
-		<header id="header">
-			<div class="inner">
-				<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="서상원 프로필 사진" /></a>
-				<h1><strong>서상원 | Sangwon Seo</strong><br />
-				Market Researcher & Data Analyst<br />
-				데이터 기반의 인사이트를 도출합니다</h1>
-			</div>
-		</header>
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="서상원 | Ipsos 리서처 출신 데이터 분석가. Python, SQL, GA4/GTM 기반 마케팅 리서치 및 데이터 분석 포트폴리오"
+    />
+    <meta
+      name="keywords"
+      content="마케팅 리서처, 데이터 분석가, Ipsos, Python, SQL, GA4, 포트폴리오, 서상원"
+    />
+    <meta name="author" content="서상원 Sangwon Seo" />
 
-		<!-- Main -->
-		<div id="main">
+    <!-- Open Graph (LinkedIn, 카카오톡 공유 시 미리보기) -->
+    <meta
+      property="og:title"
+      content="서상원 포트폴리오 | Market Researcher & Data Analyst"
+    />
+    <meta
+      property="og:description"
+      content="Ipsos 리서처 경력 | Python/SQL 데이터 분석 | AI/ML 프로젝트 PM"
+    />
+    <meta
+      property="og:image"
+      content="https://sangwonseo-data.github.io/images/avatar.jpg"
+    />
+    <meta property="og:url" content="https://sangwonseo-data.github.io" />
+    <meta property="og:type" content="website" />
 
-			<!-- Professional Identity Section -->
-			<section id="one" data-section="professional-identity">
-				<header class="major">
-					<h2>Professional Identity</h2>
-				</header>
-				
-				<p>마케팅 및 사회조사 분야의 최전선(<strong>Ipsos MSU1본부</strong>)에서 실무를 경험하며 리서처로서의 첫 커리어를 시작했습니다.</p>
-				<p>소비자 행동 분석과 통계적 방법론을 바탕으로 비즈니스 인사이트를 도출해왔으며,<br>
-				다수의 <strong>AI 및 데이터 분석 프로젝트</strong>를 통해 하드스킬 역량을 높였습니다.</p>				
-				<p>PM 및 발표자 역할을 수행하며 소프트스킬 역시 발전시키고 있습니다.</p>
-				
-				<div class="row">
-					<div class="col-6 col-12-xsmall">
-						<h3>Hard Skills</h3>
-						<ul>
-							<li><strong>Research:</strong> U&A 조사, 컨조인트 분석, 정성/정량 리서치 설계</li>
-							<li><strong>Data Science:</strong> Python (Pandas, NumPy), SQL</li>
-							<li><strong>Analytics:</strong> GA4, GTM, SPSS, R, 통계적 가설 검정</li>
-							<li><strong>AI & ML:</strong> PyTorch, Computer Vision, DL 모델링</li>
-							<li><strong>Visualization:</strong> Q-GIS, Matplotlib</li>
-						</ul>
-					</div>
-					<div class="col-6 col-12-xsmall">
-						<h3>Soft Skills & Achievements</h3>
-						<ul>
-							<li><strong>Project Management:</strong> 팀 리딩 및 프로젝트 총괄 경험</li>
-							<li><strong>Business Insight:</strong> S전자 등 주요 기업 대상 북미/유럽시장 소비자 분석</li>
-							<li><strong>Communication:</strong> 고객사 대면 리포팅 및 전략 제언</li>
-							<li><strong>Awards:</strong> 한국경제신문 사장상 우수상, 한국재정정보원 원장상 우수상, 고려대학교 지능정보SW 아카데미 학장상</li>
-							<li><strong>Language:</strong> 영어 OPIc IH</li>
-						</ul>
-					</div>
-				</div>
-			</section>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="서상원 포트폴리오 | Market Researcher & Data Analyst"
+    />
+    <meta
+      name="twitter:description"
+      content="데이터 기반 인사이트 도출 전문가"
+    />
+    <meta
+      name="twitter:image"
+      content="https://sangwonseo-data.github.io/images/avatar.jpg"
+    />
 
-			<!-- Featured Projects Section -->
-			<section id="two" data-section="featured-projects">
-				<h2>Featured Projects</h2>
-				<div class="row">
-					
-					<!-- Project 1: Golf Swing AI -->
-					<article class="col-6 col-12-xsmall work-item" data-project="golf-swing-ai">
-						<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="골프 스윙 분석 AI 프로젝트" /></a>
-						<h3>골프 스윙 분석 AI 모델 개발</h3>
-						<p><strong>PyTorch 기반 Computer Vision 프로젝트 PM</strong></p>
-						<ul>
-							<li>팀 리딩 및 프로젝트 총괄</li>
-							<li>스윙 자세 분류 정확도 <strong>92% 달성</strong></li>
-							<li>딥러닝 모델 설계 및 학습 파이프라인 구축</li>
-							<li><em>한국경제신문 사장상 우수상 · 고려대 지능정보 SW아카데미 학장상(장려상) 수상</em></li>
-						</ul>
-					</article>
-					
-					<!-- Project 2: Waste Analysis -->
-					<article class="col-6 col-12-xsmall work-item" data-project="waste-analysis">
-						<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="서울시 무단투기 분석 프로젝트" /></a>
-						<h3>서울시 무단투기 발생환경 분석</h3>
-						<p><strong>Q-GIS 활용 공간 데이터 시각화 및 정책 제언</strong></p>
-						<ul>
-							<li>서울시 25개 자치구 무단투기 데이터 수집 및 전처리</li>
-							<li>공간 분석 기법으로 핫스팟 지역 식별</li>
-							<li>대응 전략 수립 및 정책 제언</li>
-							<li><em>한국재정정보원 데이터 분석 교육 우수상 수상</em></li>
-						</ul>
-					</article>
-					
-					<!-- Project 3: Ipsos U&A -->
-					<article class="col-6 col-12-xsmall work-item" data-project="smartphone-ua">
-						<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="글로벌 스마트폰 U&A 조사" /></a>
-						<h3>글로벌 스마트폰 U&A 조사</h3>
-						<p><strong>Ipsos MSU1본부 | S전자 프로젝트</strong></p>
-						<ul>
-							<li>북미/유럽/아시아/남미 소비자 대상 Usage & Attitude 분석</li>
-							<li>컨조인트 분석 기반 제품 포지셔닝 전략 수립</li>
-							<li>SPSS, R 활용 통계 분석 및 영문 리포트 작성</li>
-							<li><em>대규모 정량 조사 설계 및 인사이트 도출 경험</em></li>
-						</ul>
-					</article>
-					
-				</div>
-			</section>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      /* [1] 웹 버전: 데스크탑 표준 (기본 설정) */
+      #header {
+        width: 28%;
+        position: fixed; /* 사이드바 고정 */
+      }
 
-			<!-- Contact Section -->
-			<section id="three" data-section="contact">
-				<h2>Get In Touch</h2>
-				
-				<p>리서치 설계부터 데이터 분석, 인사이트 도출까지 전 과정을 수행할 수 있습니다.</p>
-				
-				<p><strong>마케팅 리서처, 데이터 분석가, 퍼포먼스 마케터</strong> 포지션에 관심 있습니다.</p>
-				
-				<p>프로젝트 협업이나 채용 관련 문의는 아래 연락처로 부탁드립니다.</p>
-				
-				<div class="row">
-					<div class="col-12">
-						<ul class="labeled-icons">
-							<li>
-								<h3 class="icon solid fa-map-marker-alt"><span class="label">Location</span></h3>
-								Seoul, Republic of Korea
-							</li>
-							<li>
-								<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-								<a href="mailto:soodal9494@naver.com">soodal9494@naver.com</a>
-							</li>
-							<li>
-								<h3 class="icon brands fa-github"><span class="label">Github</span></h3>
-								<a href="https://github.com/sangwonseo-data" target="_blank">github.com/sangwonseo-data</a>
-							</li>
-							<li>
-								<h3 class="icon brands fa-linkedin"><span class="label">LinkedIn</span></h3>
-								<a href="#" onclick="return false;" style="cursor: default; color: #999;">준비 중 (Coming Soon)</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
+      #main {
+        margin-left: 28%;
+        max-width: 100%;
+        padding: 4em;
+        word-break: keep-all; /* 단어 단위 줄바꿈 */
+      }
 
-		</div>
+      /* 한글 가독성 및 정렬 최적화 */
+      p,
+      li,
+      h3,
+      h2 {
+        overflow-wrap: break-word;
+        line-height: 1.7;
+        text-align: justify; /* 양쪽 정렬 */
+      }
 
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<ul class="copyright">
-					<li>&copy; 2026 Sangwon Seo. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
+      /* [2] 태블릿 버전: 아이패드 등 (1280px 이하) */
+      @media screen and (max-width: 1280px) {
+        #header {
+          width: 35%; /* 사이드바 폭을 조금 더 확보 */
+        }
+        #main {
+          margin-left: 35%;
+          padding: 3em;
+        }
+      }
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.poptrox.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+      /* [3] 모바일 버전: 스마트폰 (736px 이하) */
+      @media screen and (max-width: 736px) {
+        #header {
+          width: 100%; /* 사이드바를 전체 폭으로 */
+          position: relative; /* 고정 해제하여 위로 배치 */
+          height: auto;
+          padding: 3em 1.5em;
+          text-align: center; /* 프로필 정보 중앙 정렬 */
+        }
 
-	</body>
+        #main {
+          margin-left: 0; /* 왼쪽 여백 제거 */
+          width: 100%; /* 본문 100% 사용 */
+          padding: 2em 1.2em; /* 좁은 화면에 맞춘 여백 */
+        }
+
+        /* 모바일 가독성을 위해 왼쪽 정렬로 변경 */
+        p,
+        li {
+          text-align: left;
+        }
+
+        /* 스킬 섹션(col-6)을 모바일에서는 한 줄에 하나씩 보이게 강제 */
+        .col-6 {
+          width: 100% !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="image avatar"
+          ><img src="images/avatar.jpg" alt="서상원 프로필 사진"
+        /></a>
+        <h1>
+          <strong>서상원 | Sangwon Seo</strong><br />
+          Market Researcher & Data Analyst<br />
+          데이터 기반의 인사이트를 도출합니다
+        </h1>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+      <!-- Professional Identity Section -->
+      <section id="one" data-section="professional-identity">
+        <header class="major">
+          <h2>Professional Identity</h2>
+        </header>
+
+        <p>
+          마케팅 및 사회조사 분야의 최전선(<strong>Ipsos MSU1본부</strong>)에서
+          실무를 경험하며 리서처로서의 첫 커리어를 시작했습니다.
+        </p>
+        <p>
+          소비자 행동 분석과 통계적 방법론을 바탕으로 비즈니스 인사이트를
+          도출해왔으며,<br />
+          다수의 <strong>AI 및 데이터 분석 프로젝트</strong>를 통해 하드스킬
+          역량을 높였습니다.
+        </p>
+        <p>PM 및 발표자 역할을 수행하며 소프트스킬 역시 발전시키고 있습니다.</p>
+
+        <div class="row">
+          <div class="col-6 col-12-xsmall">
+            <h3>Hard Skills</h3>
+            <ul>
+              <li>
+                <strong>Research:</strong> U&A 조사, 컨조인트 분석, 정성/정량
+                리서치 설계
+              </li>
+              <li>
+                <strong>Data Science:</strong> Python (Pandas, NumPy), SQL
+              </li>
+              <li>
+                <strong>Analytics:</strong> GA4, GTM, SPSS, R, 통계적 가설 검정
+              </li>
+              <li>
+                <strong>AI & ML:</strong> PyTorch, Computer Vision, DL 모델링
+              </li>
+              <li><strong>Visualization:</strong> Q-GIS, Matplotlib</li>
+            </ul>
+          </div>
+          <div class="col-6 col-12-xsmall">
+            <h3>Soft Skills & Achievements</h3>
+            <ul>
+              <li>
+                <strong>Project Management:</strong> 팀 리딩 및 프로젝트 총괄
+                경험
+              </li>
+              <li>
+                <strong>Business Insight:</strong> S전자 등 주요 기업 대상
+                북미/유럽시장 소비자 분석
+              </li>
+              <li>
+                <strong>Communication:</strong> 고객사 대면 리포팅 및 전략 제언
+              </li>
+              <li>
+                <strong>Awards:</strong> 한국경제신문 사장상 우수상,
+                한국재정정보원 원장상 우수상, 고려대학교 지능정보SW 아카데미
+                학장상
+              </li>
+              <li><strong>Language:</strong> 영어 OPIc IH</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Section -->
+      <section id="two" data-section="featured-projects">
+        <h2>Featured Projects</h2>
+        <div class="row">
+          <!-- Project 1: Golf Swing AI -->
+          <article
+            class="col-6 col-12-xsmall work-item"
+            data-project="golf-swing-ai"
+          >
+            <a href="images/fulls/01.jpg" class="image fit thumb"
+              ><img src="images/thumbs/01.jpg" alt="골프 스윙 분석 AI 프로젝트"
+            /></a>
+            <h3>골프 스윙 분석 AI 모델 개발</h3>
+            <p><strong>PyTorch 기반 Computer Vision 프로젝트 PM</strong></p>
+            <ul>
+              <li>팀 리딩 및 프로젝트 총괄</li>
+              <li>스윙 자세 분류 정확도 <strong>92% 달성</strong></li>
+              <li>딥러닝 모델 설계 및 학습 파이프라인 구축</li>
+              <li>
+                <em
+                  >한국경제신문 사장상 우수상 · 고려대 지능정보 SW아카데미
+                  학장상(장려상) 수상</em
+                >
+              </li>
+            </ul>
+          </article>
+
+          <!-- Project 2: Waste Analysis -->
+          <article
+            class="col-6 col-12-xsmall work-item"
+            data-project="waste-analysis"
+          >
+            <a href="images/fulls/02.jpg" class="image fit thumb"
+              ><img
+                src="images/thumbs/02.jpg"
+                alt="서울시 무단투기 분석 프로젝트"
+            /></a>
+            <h3>서울시 무단투기 발생환경 분석</h3>
+            <p><strong>Q-GIS 활용 공간 데이터 시각화 및 정책 제언</strong></p>
+            <ul>
+              <li>서울시 25개 자치구 무단투기 데이터 수집 및 전처리</li>
+              <li>공간 분석 기법으로 핫스팟 지역 식별</li>
+              <li>대응 전략 수립 및 정책 제언</li>
+              <li><em>한국재정정보원 데이터 분석 교육 우수상 수상</em></li>
+            </ul>
+          </article>
+
+          <!-- Project 3: Ipsos U&A -->
+          <article
+            class="col-6 col-12-xsmall work-item"
+            data-project="smartphone-ua"
+          >
+            <a href="images/fulls/03.jpg" class="image fit thumb"
+              ><img src="images/thumbs/03.jpg" alt="글로벌 스마트폰 U&A 조사"
+            /></a>
+            <h3>글로벌 스마트폰 U&A 조사</h3>
+            <p><strong>Ipsos MSU1본부 | S전자 프로젝트</strong></p>
+            <ul>
+              <li>북미/유럽/아시아/남미 소비자 대상 Usage & Attitude 분석</li>
+              <li>컨조인트 분석 기반 제품 포지셔닝 전략 수립</li>
+              <li>SPSS, R 활용 통계 분석 및 영문 리포트 작성</li>
+              <li><em>대규모 정량 조사 설계 및 인사이트 도출 경험</em></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="three" data-section="contact">
+        <h2>Get In Touch</h2>
+
+        <p>
+          리서치 설계부터 데이터 분석, 인사이트 도출까지 전 과정을 수행할 수
+          있습니다.
+        </p>
+
+        <p>
+          <strong>마케팅 리서처, 데이터 분석가, 퍼포먼스 마케터</strong>
+          포지션에 관심 있습니다.
+        </p>
+
+        <p>프로젝트 협업이나 채용 관련 문의는 아래 연락처로 부탁드립니다.</p>
+
+        <div class="row">
+          <div class="col-12">
+            <ul class="labeled-icons">
+              <li>
+                <h3 class="icon solid fa-map-marker-alt">
+                  <span class="label">Location</span>
+                </h3>
+                Seoul, Republic of Korea
+              </li>
+              <li>
+                <h3 class="icon solid fa-envelope">
+                  <span class="label">Email</span>
+                </h3>
+                <a href="mailto:soodal9494@naver.com">soodal9494@naver.com</a>
+              </li>
+              <li>
+                <h3 class="icon brands fa-github">
+                  <span class="label">Github</span>
+                </h3>
+                <a href="https://github.com/sangwonseo-data" target="_blank"
+                  >github.com/sangwonseo-data</a
+                >
+              </li>
+              <li>
+                <h3 class="icon brands fa-linkedin">
+                  <span class="label">LinkedIn</span>
+                </h3>
+                <a
+                  href="#"
+                  onclick="return false;"
+                  style="cursor: default; color: #999"
+                  >준비 중 (Coming Soon)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <ul class="copyright">
+          <li>&copy; 2026 Sangwon Seo. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
-
-
-
