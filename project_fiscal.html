@@ -1,0 +1,190 @@
+<meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, user-scalable=no"
+/>
+
+<style>
+  /* 프로젝트 상세페이지 전용 간단 스타일 */
+  .project-container {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "Suit", "Pretendard", sans-serif; /* 폰트는 기존 것 따름 */
+    line-height: 1.6;
+    color: #333;
+  }
+  .project-header {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+  .project-header h2 {
+    margin-top: 0;
+    color: #222;
+  }
+  .project-meta {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 0.95em;
+    color: #555;
+  }
+  .project-meta li {
+    margin-bottom: 5px;
+  }
+
+  .project-section {
+    margin-bottom: 50px; /* 각 단계별 간격 */
+  }
+  .project-section h3 {
+    border-left: 5px solid #2c3e50; /* 제목 옆 포인트 컬러 */
+    padding-left: 10px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  .project-img-box {
+    text-align: center;
+    margin: 20px 0;
+  }
+  /* 이미지를 반응형으로 (모바일에서도 안 깨지게) */
+  .project-img-box img {
+    width: 100%;
+    max-width: 800px; /* 너무 커지지 않게 제한 */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 살짝 그림자 */
+    border: 1px solid #eee;
+  }
+  .img-caption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+  }
+  .download-btn {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: white !important;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  .download-btn:hover {
+    background-color: #1a252f;
+  }
+</style>
+
+<div class="project-container">
+  <div class="project-header">
+    <h2>📂 서울시 재정 데이터를 활용한 생활쓰레기 무단투기 분석</h2>
+    <p>
+      <strong>"예산을 많이 쓰면 무단투기가 줄어들까?"</strong>라는 가설을
+      데이터로 검증하고, 관악구·성북구 등 최우선 관리 지역을 도출해낸 데이터
+      분석 프로젝트입니다.
+    </p>
+    <ul class="project-meta">
+      <li><strong>📅 기간:</strong> 2025.01 (2주)</li>
+      <li><strong>🛠 사용 툴:</strong> Python (Pandas, Seaborn), QGIS</li>
+      <li>
+        <strong>👤 역할:</strong> 데이터 전처리, 상관관계 분석, 지표 모델링,
+        시각화
+      </li>
+    </ul>
+  </div>
+
+  <div class="project-section">
+    <h3>#1. 분석 프로세스: 데이터 마트 구축</h3>
+    <div class="project-img-box">
+      <img src="images/projects/project_fiscal_01.png" alt="분석 프로세스" />
+      <div class="img-caption">
+        💡 예산, 민원, 공간 정보 등 이종 데이터를 결합하여 데이터 마트(Data
+        Mart)를 구축하고, 상관관계 분석과 공간 분석을 병행하여 다각도로 문제를
+        진단했습니다.
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <h3>#2. 현황 분석: 예산 투입의 효율성 검증</h3>
+    <div class="project-img-box">
+      <img src="images/projects/project_fiscal_02.png" alt="상관관계 히트맵" />
+      <div class="img-caption">
+        📊 재정자립도와 청소 예산은 강한 양의 상관관계(0.79)를 보였으나, 정작
+        <strong
+          >'예산 투입'과 '무단투기 감소(관리 효율)' 사이에는 뚜렷한 상관관계가
+          없음</strong
+        >을 통계적으로 입증했습니다.
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <h3>#3. 심층 분석: CCTV의 역설(Paradox)</h3>
+    <div class="project-img-box">
+      <img src="images/projects/project_fiscal_03.png" alt="산점도 분석" />
+      <div class="img-caption">
+        📷 CCTV 설치 대수와 신고 건수 간의 상관계수는 0.28로 매우 낮았습니다.
+        이는 하드웨어(CCTV) 중심의 예산 집행이 실제 무단투기 억제에 효과적이지
+        않다는 <strong>'CCTV 패러독스'</strong>를 데이터로 밝혀낸 핵심
+        인사이트입니다.
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <h3>#4. 방법론: 자체 복합지표 개발</h3>
+    <div class="project-img-box">
+      <img
+        src="images/projects/project_fiscal_04.png"
+        alt="발생심각 지수 수식"
+      />
+
+      <img
+        src="images/projects/project_fiscal_05.png"
+        alt="단속효율성 지수 수식"
+        style="margin-top: 20px"
+      />
+
+      <div class="img-caption">
+        🧮 <strong>(위) 발생심각 지수 / (아래) 단속효율성 지수</strong><br />
+        단순 신고 건수의 편향을 막기 위해 Z-Score 표준화를 적용한 자체 복합
+        지표를 개발하여 자치구별 현황을 객관적으로 정량화했습니다.
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <h3>#5. 결론 및 제언: 고위험 지역 시각화</h3>
+    <div class="project-img-box">
+      <img src="images/projects/project_fiscal_06.png" alt="QGIS 시각화" />
+      <div class="img-caption">
+        🗺️ QGIS를 활용해 분석 결과를 지도에 시각화했습니다. 그 결과 관악구,
+        성북구 등 '깨진 유리창 이론'이 적용되는 고위험 군집 지역을 식별하고,
+        맞춤형 예산 재배정 전략을 제안했습니다.
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section" style="text-align: center; margin-top: 50px">
+    <h3>📥 전체 발표자료 확인하기</h3>
+    <p>
+      더 상세한 전처리 로직과 분석 코드는 아래 PDF에서 확인하실 수 있습니다.
+    </p>
+    <a
+      href="images/projects/project_fiscal_all.pdf"
+      class="download-btn"
+      target="_blank"
+      download
+    >
+      📄 전체 발표자료 다운로드 (PDF)
+    </a>
+  </div>
+</div>
