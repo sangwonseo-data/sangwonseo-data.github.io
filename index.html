@@ -143,6 +143,44 @@
           width: 100% !important;
         }
       }
+      /* [추가 수정] 태블릿 화면(1280px 이하)에서 사이드바와 본문 겹침 해결 */
+      @media screen and (max-width: 1280px) {
+        #header {
+          /* 사이드바를 왼쪽 벽에 고정하지 않고, 화면 흐름에 따르게 변경 */
+          position: relative;
+          width: 100%;
+          height: auto;
+          text-align: center;
+          padding: 3em 2em;
+        }
+
+        #main {
+          /* 본문 왼쪽 여백을 없애서 사이드바 아래로 자연스럽게 배치 */
+          margin-left: 0;
+          width: 100%;
+          padding: 2em;
+        }
+
+        /* 프로필 사진 크기 조절 (선택사항) */
+        #header .image.avatar {
+          width: 150px;
+          margin: 0 auto 1em auto;
+        }
+      }
+      /* [추가] 저작권 문구(Footer) 스타일 수정: 작고 연하게 */
+      #footer .copyright {
+        font-size: 0.6em; /* 글자 크기를 60%로 축소 (원래보다 훨씬 작아짐) */
+        color: #cccccc; /* 색상을 아주 연한 회색으로 변경 */
+        margin-top: 5em; /* 위쪽 여백을 많이 줘서 본문과 멀리 떨어뜨림 */
+        opacity: 0.5; /* 투명도를 줘서 흐릿하게 만듦 */
+      }
+
+      /* 링크(HTML5 UP 부분)도 똑같이 연하게 처리 */
+      #footer .copyright a {
+        color: inherit; /* 부모 색상(#cccccc)을 따라감 */
+        text-decoration: none; /* 밑줄 제거 */
+        border: 0; /* 테두리 제거 */
+      }
     </style>
   </head>
   <body class="is-preload">
