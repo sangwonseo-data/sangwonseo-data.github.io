@@ -143,6 +143,22 @@
           width: 100% !important;
         }
       }
+      /* Featured Projects 썸네일 어두운 오버레이 제거 및 밝기 최적화 */
+      .work-item .image:after,
+      .work-item .image:before {
+        display: none !important; /* 이미지 위의 어두운 필터 제거 */
+      }
+
+      .work-item img {
+        filter: brightness(100%) !important; /* 이미지 밝기를 원래대로 강제 */
+        transition: transform 0.3s ease;
+      }
+
+      .work-item img:hover {
+        transform: scale(
+          1.02
+        ); /* 마우스 올렸을 때 살짝 커지는 효과 (선택사항) */
+      }
     </style>
   </head>
   <body class="is-preload">
@@ -270,9 +286,18 @@
             class="col-6 col-12-xsmall work-item"
             data-project="golf-swing-ai"
           >
-            <a href="images/fulls/01.jpg" class="image fit thumb"
-              ><img src="images/thumbs/01.jpg" alt="골프 스윙 분석 AI 프로젝트"
-            /></a>
+            <a
+              href="project_swingnetv2.html"
+              class="image fit"
+              target="_blank"
+              style="cursor: pointer"
+            >
+              <img
+                src="images/thumbs/project_swingnetv2_main.png"
+                alt="골프 스윙 분석 AI 프로젝트"
+              />
+            </a>
+
             <h3>골프 스윙 분석 AI 모델 개발</h3>
             <p>
               <strong>PyTorch 기반 Computer Vision 프로젝트 - PM/발표자</strong>
