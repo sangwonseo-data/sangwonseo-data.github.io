@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-K8TF2XL5");
+    </script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>FIT:ON 비즈니스 기획 | 서상원 포트폴리오</title>
+
+    <style>
+      /* --- 스타일 정의: 프리미엄 다크 블루 그라데이션 적용 --- */
+      .project-container {
+        max-width: 900px;
+        margin: 0 auto;
+        font-family: "Pretendard", "Suit", sans-serif;
+        line-height: 1.8;
+        color: #333;
+        padding: 20px;
+      }
+
+      .project-header {
+        background: linear-gradient(135deg, #1a2a6c, #2a4858);
+        padding: 60px 40px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+        color: white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      .award-badge {
+        background: #ff4b2b;
+        color: white;
+        padding: 6px 18px;
+        border-radius: 50px;
+        font-size: 0.95em;
+        font-weight: bold;
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+      .project-header h2 {
+        margin: 10px 0;
+        font-size: 2.4em;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -0.02em;
+      }
+
+      .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-top: 35px;
+      }
+      .metric-box {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .metric-value {
+        display: block;
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #00d2ff;
+      }
+      .metric-label {
+        font-size: 0.85em;
+        color: #ddd;
+      }
+
+      .project-section {
+        margin-bottom: 90px;
+      }
+      .section-title {
+        border-left: 5px solid #1a2a6c;
+        padding-left: 15px;
+        margin-bottom: 40px;
+        color: #1a2a6c;
+        font-size: 1.8em;
+        font-weight: 700;
+      }
+
+      /* 파이프라인 단계별 스타일 */
+      .logic-step {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 60px;
+        position: relative;
+      }
+      .logic-step:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        left: 22px;
+        top: 55px;
+        bottom: -60px;
+        width: 2px;
+        background: #d1d8e0;
+        z-index: -1;
+      }
+      .step-marker {
+        flex-shrink: 0;
+        width: 45px;
+        height: 45px;
+        background: #1a2a6c;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-top: 5px;
+        box-shadow: 0 0 0 6px white;
+      }
+      .step-content {
+        flex-grow: 1;
+        background: #fdfdfd;
+        padding: 25px;
+        border-radius: 12px;
+        border: 1px solid #f0f0f0;
+      }
+      .step-title {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 12px;
+        display: block;
+      }
+
+      .project-img-box img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        border: 1px solid #eee;
+        margin-top: 15px;
+      }
+      .img-caption {
+        font-size: 0.85em;
+        color: #777;
+        margin-top: 10px;
+        text-align: center;
+        display: block;
+        background: #f8f9fa;
+        padding: 10px;
+        border-radius: 6px;
+      }
+
+      .highlight-box {
+        background: #eef2f3;
+        padding: 25px;
+        border-radius: 10px;
+        border-left: 5px solid #2a4858;
+        margin: 20px 0;
+      }
+
+      .download-btn {
+        display: inline-block;
+        background: #1a2a6c;
+        color: white !important;
+        padding: 20px 50px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: all 0.3s;
+        margin-top: 25px;
+      }
+      .download-btn:hover {
+        background: #2a4858;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(26, 42, 108, 0.2);
+      }
+
+      @media screen and (max-width: 768px) {
+        .metrics-grid {
+          grid-template-columns: 1fr;
+        }
+        .logic-step {
+          flex-direction: column;
+          gap: 15px;
+        }
+        .logic-step::after {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-K8TF2XL5"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+
+    <div class="project-container">
+      <div class="project-header">
+        <span class="award-badge">🏆 한국경제신문사 사장상 (우수상)</span>
+        <h2>당신의 편안함을 위한 FIT:ON</h2>
+        <p>
+          "평균의 함정에서 벗어난 진짜 인체공학적 솔루션을 제안합니다."<br />
+          마케팅적 수식어를 넘어 <strong>정량적 데이터</strong>와
+          <strong>사용자 경험(UX)</strong>을 결합하여<br />
+          차세대 맞춤형 의자 큐레이션 비즈니스 모델을 기획했습니다.
+        </p>
+
+        <div class="metrics-grid">
+          <div class="metric-box">
+            <span class="metric-value">Market Insight</span>
+            <span class="metric-label">특허 및 VOC 데이터 분석</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-value">System Flow</span>
+            <span class="metric-label">3D 신체 분석 로직 설계</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-value">Expansion</span>
+            <span class="metric-label">B2B 파트너십 확장 전략</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h3 class="section-title">🚀 Business Strategy Pipeline</h3>
+
+        <div class="logic-step">
+          <div class="step-marker">1</div>
+          <div class="step-content">
+            <span class="step-title"
+              >Problem Finding: '인체공학'의 실체와 평균의 함정</span
+            >
+            <p>
+              기존 '인체공학' 의자가 단순한 조절 기능을 넘어 실제 신체에
+              안락함을 주는지 의구심을 가졌습니다. 특허 자료 분석을 통해 조절
+              기능의 이점과 별개로 실제 인체공학 등록 여부의 간극을 확인하고,
+              <strong>국내대표 의자 제조사 리뷰 분석</strong>을 통해 "90도
+              각도의 불편함"이라는 실질적 페인포인트를 포착했습니다.
+            </p>
+            <div class="project-img-box">
+              <img
+                src="images/projects/project_fiton_problem_01.png"
+                alt="특허 및 VOC 분석 장표"
+              />
+              <img
+                src="images/projects/project_fiton_problem_02.png"
+                alt="특허 및 VOC 분석 장표"
+              />
+              <img
+                src="images/projects/project_fiton_problem_03.png"
+                alt="특허 및 VOC 분석 장표"
+              />
+              <span class="img-caption"
+                >▲ [3-5p] 특허 분석 및 실제 사용자 불만족 데이터를 통한 문제
+                정의</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="step-marker">2</div>
+          <div class="step-content">
+            <span class="step-title"
+              >Overall Flow: 3D 신체 분석 시스템 설계</span
+            >
+            <p>
+              ViTPose와 Meshroom 기술을 활용해 사진 데이터로부터 정밀한
+              스켈레톤과 3D 메쉬를 추출하는 전체 프로세스를 설계했습니다. 데이터
+              전처리부터
+              <strong>체형 군집화(Clustering)</strong> 모델링까지, 기술이 실제
+              서비스로 연결되는 로직을 구체화했습니다.
+            </p>
+            <div class="project-img-box">
+              <img
+                src="images/projects/project_fiton_flow_01.png"
+                alt="시스템 플로우 장표"
+              />
+              <img
+                src="images/projects/project_fiton_flow_02.png"
+                alt="시스템 플로우 장표"
+              />
+              <span class="img-caption"
+                >▲ [6-7p] 기술 프로세스 전체 플로우 및 3D 데이터 추출
+                아키텍처</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="step-marker">3</div>
+          <div class="step-content">
+            <span class="step-title"
+              >User Strategy: 신뢰도 기반의 사용자 여정(UJM)</span
+            >
+            <p>
+              Ipsos 마케팅 리서치 경험을 이식하여, 고객이 서비스를 인지하고
+              결과에 확신을 갖는 여정을 설계했습니다. 정보의 과잉 상황에서
+              <strong>개인 맞춤 가이드</strong>를 제공하고, 정확한 분석 리포트를
+              통해 서비스 신뢰도를 극대화하는 방안을 제시했습니다.
+            </p>
+            <div class="project-img-box">
+              <img src="images/projects/project_fiton_ujm.png" alt="UJM 장표" />
+              <span class="img-caption"
+                >▲ [12p] 단계별 고객 기대와 인지 분석을 통한 사용자 여정 지도
+                설계</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="step-marker">4</div>
+          <div class="step-content">
+            <span class="step-title"
+              >Technical Details: 정량적 데이터 기반 체형 진단</span
+            >
+            <p>
+              단순 측정을 넘어 거북목, 둥근 어깨, 골반 기울기 등
+              <strong>비대칭 정도를 수치화</strong>(약 3-15도 편차)하여 상세
+              분석합니다. 특히 사용자의 신체 분절 길이를
+              <strong>평균 여성 데이터와 비교</strong>하여 하체 중심 체형 여부
+              등을 정밀하게 진단합니다.
+            </p>
+            <div class="project-img-box">
+              <img
+                src="images/projects/project_fiton_tech_01.png"
+                alt="신체 분석 리포트 장표"
+              />
+              <img
+                src="images/projects/project_fiton_tech_02.png"
+                alt="신체 분석 리포트 장표"
+              />
+              <span class="img-caption"
+                >▲ [21-22p] 정밀 자세 분석 및 평균 대비 신체 구간 길이 비교
+                리포트</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="step-marker">5</div>
+          <div class="step-content">
+            <span class="step-title"
+              >Expansion: 비즈니스 파트너십 및 시장 확장</span
+            >
+            <p>
+              '사이즈오브[체어]'와 같은 제작 브랜드와의 파트너십을 통해 번거로운
+              측정 과정을 개선하고 수익 모델을 구체화했습니다. 기존 글로벌 맞춤
+              브랜드 대비
+              <strong>자동화된 측정 및 보고서화 기능</strong>의 우위를 점하여
+              시장 경쟁력을 확보했습니다.
+            </p>
+            <div class="project-img-box">
+              <img
+                src="images/projects/project_fiton_expansion_01.png"
+                alt="확장 전략 및 유사 사례 비교 장표"
+              />
+              <img
+                src="images/projects/project_fiton_expansion_02.png"
+                alt="확장 전략 및 유사 사례 비교 장표"
+              />
+              <span class="img-caption"
+                >▲ [23-24p] 맞춤형 의자 제작 파트너십 및 경쟁사 대비 USP
+                분석</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="project-section"
+        style="
+          text-align: center;
+          background: #fdfdfd;
+          padding: 60px 40px;
+          border-radius: 20px;
+          border: 1px solid #eee;
+        "
+      >
+        <h3 style="margin-top: 0; font-size: 1.8em; color: #1a2a6c">
+          📊 Final Conclusion
+        </h3>
+        <p style="color: #666; font-size: 1.1em; margin-bottom: 35px">
+          "아이디어를 데이터로 증명하고 비즈니스로 구체화하다"<br />
+          철저한 리서치와 논리적 설계를 통해
+          <strong>한국경제신문사 사장상</strong>을 수상하며<br />
+          비즈니스 분석가로서의 잠재력을 입증한 프로젝트입니다.
+        </p>
+
+        <h3>📥 전체 프로젝트 기획안 확인</h3>
+        <p style="color: #888; margin-bottom: 25px">
+          상세한 시장 리서치와 기술 아키텍처가 담긴 전체 PDF 자료를 확인하세요.
+        </p>
+        <a
+          href="images/projects/project_fiton_all.pdf"
+          class="download-btn"
+          target="_blank"
+          download
+        >
+          📄 FIT:ON 기획 발표자료 다운로드 (PDF)
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
